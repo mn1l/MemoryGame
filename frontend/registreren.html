@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titel en icoontje -->
+    <title>Registreren Meowmory</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icoontje.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/aanmelden.css"/>
+</head>
+
+<body>
+
+<h2>Registreren</h2>
+
+<form id="registerForm">
+    <div class="container">
+        <label for="email"><b>E-mailadres</b></label>
+        <input type="email" placeholder="E-mailadres" name="email" required>
+
+        <label for="uname"><b>Gebruikersnaam</b></label>
+        <input type="text" placeholder="Gebruikersnaam" name="uname" required>
+
+        <label for="psw"><b>Wachtwoord</b></label>
+        <input type="password" placeholder="Wachtwoord" name="psw" required>
+
+        <label for="pswRepeat"><b>Wachtwoord herhalen</b></label>
+        <input type="password" placeholder="Wachtwoord herhalen" name="pswRepeat" required>
+
+        <button class="loginbutton" type="submit">Registreren</button>
+
+        <span>Al een account? <a href="inloggen.html">Inloggen</a></span>
+    </div>
+</form>
+
+<script src="js/accounts/register.js"></script>
+<script src="./js/navigatie.js"></script>
+</body>
+</html>

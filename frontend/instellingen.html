@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instellingen Meowmory</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icoontje.png">
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/instellingen.css"/>
+</head>
+<body>
+<div class="titel">
+    <h2>Instellingen</h2>
+    <button id="gameboard" type="button">&times;</button>
+</div>
+<form>
+    <div class="container">
+        <label for="currentEmail"><b>Oud e-mailadres:</b></label>
+        <input type="email" id="currentEmail" name="currentEmail" placeholder="Oud e-mailadres invoeren" required>
+
+        <label for="newEmail"><b>Nieuw e-mailadres:</b></label>
+        <input type="email" id="newEmail" name="newEmail" placeholder="Nieuw e-mailadres invoeren" required>
+
+        <label for="imagesOnCard"><b>Plaatjes van de kaarten:</b></label>
+        <select id="imagesOnCard" class="knop">
+            <option value="Katten">Katten</option>
+            <option value="Honden">Honden</option>
+        </select>
+
+        <div class="colorpicker-container">
+            <label for="kaartKleur"><b>KaartKleur:</b></label>
+            <input id="kaartKleur" class="colorpicker" type="color" value="#fffaf0">
+        </div>
+
+        <div class="colorpicker-container">
+            <label for="gevondenKleur"><b>Gevonden Kleur:</b></label>
+            <input id="gevondenKleur" class="colorpicker" type="color" value="#fc819e">
+        </div>
+
+        <button class="savebutton" type="button">Opslaan</button>
+    </div>
+</form>
+<script src="./js/utils.js"></script>
+<script src="./js/navigatie.js"></script>
+<script src="./js/accounts/instellingen.js"></script>
+<script src="js/authCheck.js"></script>
+</body>
+</html>

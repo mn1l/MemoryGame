@@ -1,0 +1,48 @@
+* {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 8vw;
+    text-align: center;
+    color: floralwhite;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border-color: #ee8ca0;
+    box-sizing: border-box;
+    margin: 8px 0 12px;
+}
+
+.container {
+    float: right;
+    color: floralwhite;
+    padding: 20px;
+    background-color: pink;
+    margin: 2vw 10vw 2vw 10vw;
+}
+
+.loginbutton {
+    background-color: #ee8ca0;
+    color: floralwhite;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.loginbutton:hover {
+    opacity: 0.8;
+}
+
+@media all and (min-width: 1250px) {
+    .container{
+        margin: 2vw 33vw 2vw 25vw;
+        width: 33.33%;
+    }
+}

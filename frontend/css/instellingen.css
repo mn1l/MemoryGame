@@ -1,0 +1,101 @@
+* {
+    font-weight: normal;
+}
+
+.titel {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.titel h2 {
+    font-size: 30px;
+    color: floralwhite;
+    margin-right: 10.5vw;
+    margin-left: 10.5vw;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.titel button {
+    font-size: 25px;
+    z-index: 1;
+    background-color: floralwhite;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+input[type=text], input[type=password], input[type=email], select.knop {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border-color: #ee8ca0;
+    box-sizing: border-box;
+    margin: 8px 0 12px;
+}
+
+.knop {
+    background-color: white;
+}
+
+.container {
+    float: right;
+    color: floralwhite;
+    padding: 20px;
+    background-color: pink;
+    margin: 2vw 10vw 2vw 10vw;
+}
+
+.savebutton {
+    background-color: #ee8ca0;
+    color: floralwhite;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.savebutton:hover {
+    opacity: 0.8;
+}
+
+.colorpicker-container {
+    display: flex;
+    align-items: center;
+    margin: 8px 0 12px;
+}
+
+.colorpicker-container label {
+    flex: 1;
+}
+
+.colorpicker {
+    flex: 1;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+#gameboard {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#gameboard:hover {
+    color: pink;
+}
+
+@media all and (min-width: 1250px) {
+    .container {
+        margin: 2vw 33vw 2vw 25vw;
+        width: 33.33%;
+    }
+}

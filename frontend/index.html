@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titel en icoontje -->
+    <title>Meowmory</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icoontje.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/normalize.css"/>
+</head>
+
+<body>
+<header>
+    <h2>Meowmory :3</h2>
+    <div>Verlopen tijd: <span id="elapsedTime">00:00</span></div>
+    <div>
+        Gevonden kaart-paren:
+        <a id="counter">0</a>
+    </div>
+    <div>Resterende toontijd:</div>
+    <div id="balk">
+        <div id="toontijd">3s</div>
+    </div>
+</header>
+
+<article class="col-6">
+    <div class="grid-container"></div>
+</article>
+
+<nav class="col-3">
+    <ul id="loggedout" class="navigation">
+        <button id="login"  class="knop" type="button">Inloggen</button>
+        <button id="register" class="knop"  type="button">Registreren</button>
+    </ul>
+    <ul id="loggedin" class="navigation">
+        <button id="logout" class="knop" type="button">Uitloggen</button>
+        <button id="settings" class="knop" type="button">Instellingen</button>
+    </ul>
+    <ul>
+        <b id="usernameDisplay"></b>
+        <br>
+        <br>
+        <b>Top vijf</b>
+        <ol id="scoreList"></ol>
+        <br>
+        <li>
+            <b>Gemiddelde speeltijd: </b><span id="averageScore"></span>
+        </li>
+        <br>
+        <li>
+            <a>Karakter op kaarten: </a>
+            <select id="characterOnCard" class="knop">
+                <option value="+">+</option>
+                <option value="*">*</option>
+                <option value="#">#</option>
+                <option value="$">$</option>
+                <option value="%">%</option>
+            </select>
+        </li>
+        <li>
+            <a>Plaatjes van de kaarten: </a>
+            <select id="imagesOnCard" class="knop">
+                <option value="Katten">Katten</option>
+                <option value="Honden">Honden</option>
+            </select>
+        </li>
+        <li>
+            <a>Afmeting bord: </a>
+            <select id="boardSize" class="knop">
+                <option value="6">6x6</option>
+                <option value="4">4x4</option>
+                <option value="2">2x2</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <li class="colorpicker-container">
+            <a>KaartKleur</a>
+            <input id="kaartKleur" class="colorpicker" type="color" value="#fffaf0">
+        </li>
+        <li class="colorpicker-container">
+            <a>Open</a>
+            <input id="openKleur" class="colorpicker" type="color" value="#fff3C7">
+        </li>
+        <li class="colorpicker-container">
+            <a>Gevonden</a>
+            <input id="gevondenKleur" class="colorpicker" type="color" value="#fc819e">
+        </li>
+        <li>
+            <button id="herstart" class="knop" type="button">Herstart spel</button>
+        </li>
+    </ul>
+</nav>
+
+<div id="winContainer" style="display: none;">
+    <div id="confetti-container"></div>
+    <div id="winMessage">
+        <span id="closeWinMessage">&times;</span>
+        <h1>Congratulations!</h1>
+        <p>You've matched all the meowmory cards!</p>
+        <p>You win :3 !</p>
+        <p>Tijd: <span id="finalTime"></span></p>
+    </div>
+</div>
+
+<script src="js/visuals/scoreData.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/game/spelbord.js"></script>
+<script src="./js/game/status.js"></script>
+<script src="./js/game/logica.js"></script>
+<script src="js/game/score.js"></script>
+<script src="js/visuals/kaarten.js"></script>
+<script src="./js/navigatie.js"></script>
+<script src="./js/script.js"></script>
+<script src="js/authCheck.js"></script>
+</body>
+</html>
